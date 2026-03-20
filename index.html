@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Casa de los Pasteles – Ciudad Guzmán</title>
+
+  <!-- Favicon (pastel icon SVG inline) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%23f5e6c8'/%3E%3Cpath d='M25 72h50v6H25z' fill='%231a0a00'/%3E%3Cpath d='M20 55 Q50 48 80 55 L78 72 H22z' fill='%231a0a00'/%3E%3Cpath d='M28 40 Q50 33 72 40 L70 55 H30z' fill='%231a0a00'/%3E%3Cpath d='M22 55 Q50 62 78 55' fill='none' stroke='%23f5e6c8' stroke-width='2.5'/%3E%3Cpath d='M30 40 Q50 47 70 40' fill='none' stroke='%23f5e6c8' stroke-width='2.5'/%3E%3Ccircle cx='40' cy='28' r='3' fill='%231a0a00'/%3E%3Ccircle cx='50' cy='26' r='3' fill='%231a0a00'/%3E%3Ccircle cx='60' cy='28' r='3' fill='%231a0a00'/%3E%3Cpath d='M40 28 Q40 20 40 16' stroke='%231a0a00' stroke-width='2.5' fill='none' stroke-linecap='round'/%3E%3Cpath d='M50 26 Q50 18 50 14' stroke='%231a0a00' stroke-width='2.5' fill='none' stroke-linecap='round'/%3E%3Cpath d='M60 28 Q60 20 60 16' stroke='%231a0a00' stroke-width='2.5' fill='none' stroke-linecap='round'/%3E%3Cellipse cx='40' cy='16' rx='3' ry='4' fill='%231a0a00'/%3E%3Cellipse cx='50' cy='14' rx='3' ry='4' fill='%231a0a00'/%3E%3Cellipse cx='60' cy='16' rx='3' ry='4' fill='%231a0a00'/%3E%3C/svg%3E" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- ══════════════════════════════════
+     NAVBAR
+════════════════════════════════════ -->
+<nav id="navbar">
+  <a href="#" class="nav-logo">La Casa de los <span>Pasteles</span></a>
+
+  <ul class="nav-links">
+    <li><a href="#especialidades">Especialidades</a></li>
+    <li><a href="#nosotros">Nosotros</a></li>
+    <li><a href="#resenas">Reseñas</a></li>
+    <li><a href="tel:+523414120019" class="nav-cta">Llamar</a></li>
+  </ul>
+
+  <button class="burger" id="burgerBtn" aria-label="Abrir menú">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#especialidades" class="mob-link">Especialidades</a>
+  <a href="#nosotros"       class="mob-link">Nosotros</a>
+  <a href="#resenas"        class="mob-link">Reseñas</a>
+  <a href="tel:+523414120019">📞 Llamar ahora</a>
+</div>
+
+
+<!-- ══════════════════════════════════
+     HERO
+════════════════════════════════════ -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-deco"></div>
+
+  <div class="hero-content">
+    <p class="hero-eyebrow">Ciudad Guzmán · Jalisco</p>
+    <h1 class="hero-title">
+      El lugar perfecto para<br>
+      <em>compartir momentos dulces</em>
+    </h1>
+    <p class="hero-sub">
+      Pasteles irresistibles, café delicioso y un ambiente ideal para disfrutar en compañía.
+    </p>
+    <div class="hero-btns">
+      <a href="tel:+523414120019" class="btn-primary">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.56 3.38a2 2 0 0 1 1.99-2.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.06 6.06l.88-.88a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
+        Llamar ahora
+      </a>
+      <a href="https://maps.google.com/?q=C.+Jose+Clemente+Orozco+Flores+69,+Cd+Guzmán+Centro,+49000,+Ciudad+Guzmán,+Jalisco"
+         target="_blank" rel="noopener" class="btn-outline">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+          <circle cx="12" cy="10" r="3"/>
+        </svg>
+        Cómo llegar
+      </a>
+    </div>
+  </div>
+
+  <div class="hero-scroll">Descubrir</div>
+</section>
+
+
+<!-- ══════════════════════════════════
+     ESPECIALIDADES
+════════════════════════════════════ -->
+<section id="especialidades">
+  <div class="esp-header reveal">
+    <p class="section-eyebrow" style="justify-content:center">Lo que nos hace únicos</p>
+    <div class="ornament">✦ ✦ ✦</div>
+    <h2 class="section-title" style="text-align:center">Nuestras <em>especialidades</em></h2>
+  </div>
+
+  <div class="esp-grid">
+
+    <!-- Card 1 — Pasteles -->
+    <div class="esp-card" style="animation-delay:.1s">
+      <span class="esp-card-num">01</span>
+      <svg class="esp-icon" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10 42h36v5H10z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <path d="M7 28 Q28 22 49 28 L47 42 H9z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <path d="M13 18 Q28 12 43 18 L41 28 H15z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <path d="M9 28 Q28 34 47 28"  stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+        <path d="M15 18 Q28 24 41 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+        <line x1="20" y1="10" x2="20" y2="6"  stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <line x1="28" y1="8"  x2="28" y2="4"  stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <line x1="36" y1="10" x2="36" y2="6"  stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <ellipse cx="20" cy="5" rx="2.5" ry="3.5" stroke="currentColor" stroke-width="1.5"/>
+        <ellipse cx="28" cy="3" rx="2.5" ry="3.5" stroke="currentColor" stroke-width="1.5"/>
+        <ellipse cx="36" cy="5" rx="2.5" ry="3.5" stroke="currentColor" stroke-width="1.5"/>
+      </svg>
+      <h3>Pasteles Artesanales</h3>
+      <div class="esp-card-line"></div>
+      <p>Elaborados con ingredientes selectos y con recetas llenas de tradición. Cada pastel es una obra de arte que deleita los sentidos desde el primer vistazo hasta el último bocado.</p>
+    </div>
+
+    <!-- Card 2 — Café -->
+    <div class="esp-card" style="animation-delay:.25s">
+      <span class="esp-card-num">02</span>
+      <svg class="esp-icon" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M14 20 Q14 38 18 42 h12 Q34 38 34 20z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <path d="M34 24 Q42 24 42 30 Q42 36 34 36"     stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+        <path d="M14 20 h20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <line x1="18" y1="46" x2="30" y2="46" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <path d="M22 14 Q24 10 22 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+        <path d="M27 14 Q29 10 27 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+      </svg>
+      <h3>Café y Bebidas</h3>
+      <div class="esp-card-line"></div>
+      <p>Desde un intenso espresso hasta bebidas especiales servidas en nuestra icónica taza artesanal. El aroma y el calor de cada sorbo te envuelven en una experiencia única.</p>
+    </div>
+
+    <!-- Card 3 — Ambiente -->
+    <div class="esp-card" style="animation-delay:.4s">
+      <span class="esp-card-num">03</span>
+      <svg class="esp-icon" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="8" y="16" width="40" height="28" rx="3" stroke="currentColor" stroke-width="2"/>
+        <path d="M16 16 V12 Q16 8 20 8 h16 Q40 8 40 12 v4" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+        <line x1="8" y1="26" x2="48" y2="26" stroke="currentColor" stroke-width="1.5" stroke-dasharray="3 3"/>
+        <circle cx="22" cy="34" r="3" stroke="currentColor" stroke-width="1.5"/>
+        <circle cx="34" cy="34" r="3" stroke="currentColor" stroke-width="1.5"/>
+        <line x1="25" y1="34" x2="31" y2="34" stroke="currentColor" stroke-width="1.5"/>
+      </svg>
+      <h3>Ambiente Acogedor</h3>
+      <div class="esp-card-line"></div>
+      <p>Un espacio diseñado para que cada visita sea un recuerdo especial. Mesas cálidas, iluminación suave y una atmósfera que invita a quedarse, platicar y disfrutar.</p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════
+     NOSOTROS
+════════════════════════════════════ -->
+<section id="nosotros">
+  <div class="nos-text">
+    <p class="section-eyebrow">Nuestra historia</p>
+    <h2 class="section-title">Más que postres,<br><em>creamos momentos</em></h2>
+    <p>
+      En Casa De Los Pasteles creamos más que postres: creamos momentos.
+      Cada pastel es preparado con dedicación, buscando ese equilibrio perfecto
+      entre sabor, textura y presentación. Nuestro espacio está pensado para que
+      disfrutes desde una charla tranquila hasta una celebración especial.
+    </p>
+    <div class="nos-stats">
+      <div class="nos-stat">
+        <span>+10</span>
+        <p>Años de dulzura</p>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="nos-stat">
+        <span>100%</span>
+        <p>Ingredientes frescos</p>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="nos-stat">
+        <span>★ 5</span>
+        <p>Estrellas promedio</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="nos-image">
+    <div class="nos-image-inner"
+         style="background-image:url('https://images.unsplash.com/photo-1551024601-bec78aea704b?w=800&q=80');
+                background-size:cover; background-position:center;">
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════
+     SHOWCASE
+════════════════════════════════════ -->
+<section id="showcase">
+  <p class="section-eyebrow reveal" style="justify-content:center">Diseñado para recordar</p>
+  <h2 class="section-title reveal" style="text-align:center">Creaciones que <em>enamoran</em></h2>
+
+  <div class="showcase-grid">
+
+    <div class="showcase-card" style="animation-delay:.1s">
+      <div class="showcase-img card1-bg"
+           style="background-image:url('https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=600&q=80');
+                  background-size:cover;">
+      </div>
+      <div class="showcase-overlay"></div>
+      <div class="showcase-card-inner">
+        <p class="showcase-label">Pasteles de Celebración</p>
+        <p class="showcase-sub">Artesanales · Premium</p>
+      </div>
+    </div>
+
+    <div class="showcase-card" style="animation-delay:.22s">
+      <div class="showcase-img card2-bg"
+           style="background-image:url('https://images.unsplash.com/photo-1495147466023-ac5c588e2e94?w=600&q=80');
+                  background-size:cover;">
+      </div>
+      <div class="showcase-overlay"></div>
+      <div class="showcase-card-inner">
+        <p class="showcase-label">Waffles &amp; Postres</p>
+        <p class="showcase-sub">Recién preparados</p>
+      </div>
+    </div>
+
+    <div class="showcase-card" style="animation-delay:.34s">
+      <div class="showcase-img card3-bg"
+           style="background-image:url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&q=80');
+                  background-size:cover;">
+      </div>
+      <div class="showcase-overlay"></div>
+      <div class="showcase-card-inner">
+        <p class="showcase-label">Café de Especialidad</p>
+        <p class="showcase-sub">Bebidas calientes &amp; frías</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════
+     RESEÑAS
+════════════════════════════════════ -->
+<section id="resenas">
+  <div class="resenas-header reveal">
+    <p class="section-eyebrow" style="justify-content:center">Lo que dicen nuestros clientes</p>
+    <div class="ornament">✦ ✦ ✦</div>
+    <h2 class="section-title" style="text-align:center">Palabras que nos <em>llenan de orgullo</em></h2>
+  </div>
+
+  <div class="resenas-grid">
+
+    <div class="resena-card" style="animation-delay:.1s">
+      <div class="resena-icon">"</div>
+      <div class="stars">★★★★★</div>
+      <p class="resena-text">
+        Un lugar perfecto para disfrutar en pareja o con amigos, con gran variedad
+        de bebidas y pasteles. Excelente ambiente y servicio.
+      </p>
+      <p class="resena-author">— Cliente satisfecho</p>
+    </div>
+
+    <div class="resena-card" style="animation-delay:.22s">
+      <div class="resena-icon">"</div>
+      <div class="stars">★★★★★</div>
+      <p class="resena-text">
+        Los pasteles son deliciosos, especialmente el tiramisú.
+        Ideal para celebraciones especiales y momentos que quedan en la memoria.
+      </p>
+      <p class="resena-author">— Cliente satisfecho</p>
+    </div>
+
+    <div class="resena-card" style="animation-delay:.34s">
+      <div class="resena-icon">"</div>
+      <div class="stars">★★★★★</div>
+      <p class="resena-text">
+        Un espacio cómodo, con buen servicio y productos que realmente valen la pena.
+        Sin duda el mejor lugar de Ciudad Guzmán.
+      </p>
+      <p class="resena-author">— Cliente satisfecho</p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════
+     CTA
+════════════════════════════════════ -->
+<section id="cta">
+  <div class="cta-deco cta-deco-1"></div>
+  <div class="cta-deco cta-deco-2"></div>
+  <p class="cta-eyebrow">Te esperamos</p>
+  <h2 class="cta-title">Haz de cualquier día<br>una <em>ocasión especial</em></h2>
+  <p class="cta-sub">Abierto todos los días hasta las 10:00 pm · Ciudad Guzmán, Jalisco</p>
+  <div class="cta-btns">
+    <a href="tel:+523414120019" class="btn-primary">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.56 3.38a2 2 0 0 1 1.99-2.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.06 6.06l.88-.88a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+      </svg>
+      Llamar ahora
+    </a>
+    <a href="https://maps.google.com/?q=C.+Jose+Clemente+Orozco+Flores+69,+Cd+Guzmán+Centro,+49000,+Ciudad+Guzmán,+Jalisco"
+       target="_blank" rel="noopener" class="btn-outline">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+        <circle cx="12" cy="10" r="3"/>
+      </svg>
+      Cómo llegar
+    </a>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════
+     FOOTER
+════════════════════════════════════ -->
+<footer>
+  <div class="footer-top">
+
+    <div class="footer-brand">
+      <div class="nav-logo">La Casa de los <span>Pasteles</span></div>
+      <p>Pastelerías y cafetería artesanal en Ciudad Guzmán. Creando momentos dulces desde hace más de una década con dedicación, sabor y amor.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Información</h4>
+      <ul>
+        <li>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+          </svg>
+          C. Jose Clemente Orozco Flores 69, Cd Guzmán Centro, 49000, Ciudad Guzmán, Jalisco
+        </li>
+        <li>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.56 3.38a2 2 0 0 1 1.99-2.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.06 6.06l.88-.88a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+          <a href="tel:+523414120019">+52 341 412 0019</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Horario</h4>
+      <ul>
+        <li>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/>
+          </svg>
+          Todos los días hasta las 10:00 pm
+        </li>
+        <li>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="1" x2="12" y2="23"/>
+            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+          </svg>
+          $100 – $200 por persona
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 La Casa de los Pasteles · Ciudad Guzmán, Jalisco</p>
+    <p style="color:rgba(245,234,210,.15); font-size:.65rem;">Diseño con ♥</p>
+  </div>
+</footer>
+
+<!-- JavaScript -->
+<script src="js/main.js"></script>
+
+</body>
+</html>
